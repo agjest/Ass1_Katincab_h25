@@ -1,14 +1,26 @@
 ---
 title: "Is reproducibility good enough?"
-author: "Ditt navn"
+author: "Katinca Haavardstun"
 date: last-modified
 csl: apa7.csl
-bibliography: [reproducibility.bib, myrefs.bib]
+papersize: a4
+number-sections: true
+citeproc: true
 format:
   html: default
-  pdf: default
+  typst: default
+  pdf: 
+    out-file: "msb105_ass_1_25_tex.pdf"
+  docx: default
+bibliography:
+  - reproducibility.bib
+  - myrefs.bib
+abstract: "Reproducibility is increasingly recognized as a cornerstone of robust and reliable science.  
+This paper explores the state of reproducibility across disciplines, including economics,  
+and considers whether current practices are “good enough."
 ---
 
+## Introduction
 
 Reproducibility is increasingly recognized as a cornerstone of robust and reliable science.  
 This paper explores the state of reproducibility across disciplines, including economics,  
@@ -16,6 +28,7 @@ and considers whether current practices are “good enough.” Drawing on lectur
 and examples of computable documents such as Quarto, the paper argues that although  
 progress has been made, significant challenges remain in ensuring replicable research.
 
+## Literature review
 
 Scientific credibility depends on whether findings can be reproduced. The so-called  
 “replication crisis” has revealed that many results, particularly in psychology, medicine,  
@@ -28,32 +41,31 @@ transparent models and methods [@frisch1933]. However, aspirations and practice 
 often diverged, raising the question: *Is reproducibility good enough today, or do we  
 need stronger norms and better tools?*
 
-
-
 The literature highlights multiple perspectives on reproducibility.  
-Ioannidis [@ioannidis2005] famously argued that “most published research findings are false.”  
-Others, like Nosek and colleagues [@nosek2015], have called for systemic reforms,  
-including preregistration and open data. Jasny et al. [@jasny2011] highlighted the  
-importance of replication studies in major journals, while Simmons et al. [@simmons2011]  
+@ioannidis2005 famously argued that “most published research findings are false.”  
+Others, like @nosek2015, have called for systemic reforms,  
+including preregistration and open data. @jasny2011 highlighted the  
+importance of replication studies in major journals, while @simmons2011 
 demonstrated how researcher degrees of freedom inflate false-positive rates.
 
-In economics, early methodological contributions by Ezekiel [@ezekiel1933] and Frisch [@frisch1933]  
+In economics, early methodological contributions by @ezekiel1933 and @frisch1933  
 laid a foundation for statistical rigor. Yet audits of journal archives have shown  
 serious gaps in reproducibility [@mccullough2008]. Despite explicit data archiving  
 requirements, many published results cannot be replicated in practice.
 
-New infrastructure is emerging. Bechhofer et al. [@bechhofer2013] describe  
+New infrastructure is emerging. @bechhofer2013 describe  
 **Research Objects** as digital packages that capture data, code, and context.  
-Brase [@brase2009] explains how **DataCite DOIs** make datasets citable, linking  
+@brase2009 explains how **DataCite DOIs** make datasets citable, linking  
 publications directly to the underlying evidence. These developments extend  
 beyond replication—they enable reuse and transparency.
 
 Computable documents are another key innovation. Building on Knuth’s  
-*literate programming* [@knuth1984], Gentleman and Temple Lang [@gentleman2007]  
+*literate programming* [@knuth1984], @gentleman2007 
 introduced **Sweave** to combine R code and narrative. This idea expanded to  
 **knitr** [@xie2015], R Markdown, and now **Quarto**, which integrates code,  
 text, and references in one reproducible document.
 
+## Discussion
 
 Should replicability be the norm? Advocates argue that it is essential for  
 trust, efficiency, and cumulative knowledge [@young2008]. Without replication,  
@@ -72,7 +84,7 @@ Remaining challenges include selective reporting [@iyengar1988], lack of
 incentives, and the sheer complexity of modern data analysis. In economics,  
 replication efforts show progress, but reproducibility is not yet standard practice.
 
-
+## Conclusion
 
 Reproducibility is improving but not yet “good enough.” Progress is visible  
 through data and code archives, DOIs, and computable documents. But incentives  
@@ -80,7 +92,11 @@ and cultural norms continue to lag behind technical solutions. The future of
 robust and reliable science depends on sustained effort to align tools, norms,  
 and rewards in favor of reproducibility.
 
-
+## Software used
 
 ```{r}
+#| echo: false
 sessionInfo()
+```
+
+## References

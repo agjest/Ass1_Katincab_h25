@@ -1,0 +1,23 @@
+---
+title: "ag Comments"
+format: html
+editor: visual
+---
+
+## General remarks
+
+- Added apa7.csl to folder. Needed for formatting of references according to apa 7 standard.
+- Copied the two first sentences of introduction to abstract in YAML just to show how this feature is used..
+- changed authors name
+- I made some slight changes to the text to show how use of the citing features in the software can simply the whole process of citing existing literature. See 3. paragraph in literature review.
+- I edited the entry for Ioannidis. Year should only contain year published, not date.
+- I put `#| echo: false` in the chunck with `session_info()` to supress printing of code chunk. We only want the result of the command.
+- The project has a nice and eventful commit history ;-)
+- Edited the citation-keys in reproducibility.bib to correspond with the ones used in the document.
+
+## Tips and tricks
+
+- put `citeproc: true` in YAML header. This forces `typst` to use bibtex for references instead of it's own system. Makes it alot easier to generate different output formats.
+- added `pdf: out-file: "msb105_ass_1_25_tex.pdf"` to YAML format. Else pdf and typst will overwrite eachothers pdf output. These two pdf engines generate slightly different output.
+
+
